@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../../../src/assets/images/header-logo.svg";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaWindowClose } from "react-icons/fa";
 
 const Nav = () => {
 
@@ -24,12 +26,17 @@ const Nav = () => {
                             {
                                 navItems.map((item, indx) => {
                                     return (
-                                        <li key={item.id}><Link to={item.link}>{item.name}</Link></li>
+                                        <li key={item.id}><Link to={item.link} className="font-semibold text-gray-600 leading-normal text-lg text-slate-gray">{item.name}</Link></li>
                                     )
                                 })
                             }
                         </ul>
                     </div>
+                    <div>
+                        <GiHamburgerMenu />
+                        <FaWindowClose />
+                    </div>
+
                 </nav>
             </header>
         </div>
