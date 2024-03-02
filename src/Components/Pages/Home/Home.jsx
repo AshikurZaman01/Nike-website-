@@ -1,3 +1,4 @@
+import Hero from "../Header/Hero/Hero";
 import Nav from "../Header/Nav";
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
             </main>
 
             <section className="xl:padding-1 wide:padding-r padding-b">
-                hero
+                <Hero></Hero>
             </section>
 
             <section className=" padding">

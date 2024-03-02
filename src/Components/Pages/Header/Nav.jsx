@@ -17,10 +17,13 @@ const Nav = () => {
             <header className="padding-x py-8  absolute z-10  w-full ">
                 <nav className="flex justify-between items-center max-container">
 
+                    {/* logo */}
                     <div>
                         <Link to={"/"}><img width={130} height={29} src={logo} alt="logo" /></Link>
                     </div>
+                    {/* logo */}
 
+                    {/* nav */}
                     <div>
                         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
                             {
@@ -32,14 +35,18 @@ const Nav = () => {
                             }
                         </ul>
                     </div>
-                    <div>
+                    {/* nav */}
+
+                    {/* icons */}
+                    <div className="text-2xl hidden max-lg:block">
                         <GiHamburgerMenu />
                         <FaWindowClose />
                     </div>
+                    {/* icons */}
 
                 </nav>
             </header>
-        </div>
+        </div >
     );
 };
 
