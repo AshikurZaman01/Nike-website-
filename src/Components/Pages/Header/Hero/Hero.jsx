@@ -1,5 +1,6 @@
 import Button from "../../../Button/Button";
 import rightArrow from "../../../../assets/icons/arrow-right.svg";
+import big01 from "../../../../assets/images/big-shoe1.png";
 
 const Hero = () => {
 
@@ -13,6 +14,7 @@ const Hero = () => {
         <div>
 
             <section id="home" className="w-full flex xl:flex-row flex-col  justify-center min-h-screen g-10 max-container">
+
                 <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
 
                     <p className="text-xl text-orange-500">Our Summer Collections</p>
@@ -46,6 +48,11 @@ const Hero = () => {
                         }
                     </div>
                 </div>
+
+                <div className="relative flex  justify-center items-center">
+                    <img src={big01} width={600} height={400} className="object-contain relative z-10" alt="" />
+                </div>
+
             </section>
 
         </div>
