@@ -1,6 +1,15 @@
 import Button from "../../../Button/Button";
 import rightArrow from "../../../../assets/icons/arrow-right.svg";
 import big01 from "../../../../assets/images/big-shoe1.png";
+import big02 from "../../../../assets/images/big-shoe2.png";
+import big03 from "../../../../assets/images/big-shoe3.png";
+import ShoeCard from "../../../ShoeCard/ShoeCard";
+
+import thumbnailShoe1 from "../../../../assets/images/thumbnail-shoe1.svg";
+import thumbnailShoe2 from "../../../../assets/images/thumbnail-shoe2.svg";
+import thumbnailShoe3 from "../../../../assets/images/thumbnail-shoe3.svg";
+import { useState } from "react";
+
 
 const Hero = () => {
 
@@ -9,6 +18,23 @@ const Hero = () => {
         { value: '500+', label: 'Shops' },
         { value: '250k+', label: 'Customers' },
     ];
+
+    const shoes = [
+        {
+            thumbnail: thumbnailShoe1,
+            bigShoe: big01,
+        },
+        {
+            thumbnail: thumbnailShoe2,
+            bigShoe: big02,
+        },
+        {
+            thumbnail: thumbnailShoe3,
+            bigShoe: big03,
+        },
+    ];
+
+    const [bigShoe, setBigShoe] = useState(shoes[0].bigShoe);
 
     return (
         <div>
@@ -49,8 +75,20 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="relative flex  justify-center items-center">
-                    <img src={big01} width={600} height={400} className="object-contain relative z-10" alt="" />
+                <div className="relative flex  justify-center items-center xl:min-h-screen max-xl:py-40  bg-cover bg-center">
+                    <img src={big01} width={500} height={400} className="object-contain relative z-10" alt="" />
+
+                    <div className="flex sm:gap-6  gap-4 absolute -bottom-[5%]">
+                        {
+                            shoes.map((shoe, indx) => {
+                                return (
+                                    <div key={indx}>
+                                        <ShoeCard imgURL={shoe} changeBigShoeImg={(shoe) => setBigShoe(shoe)} bigShoeImg={bigShoe}></ShoeCard>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
 
             </section>
