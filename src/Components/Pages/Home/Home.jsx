@@ -1,5 +1,6 @@
 import Hero from "../Header/Hero/Hero";
 import Nav from "../Header/Nav";
+import PopularProducts from "../PopularProdcuts/PopularProducts";
 
 const Home = () => {
     return (
@@ -13,7 +14,7 @@ const Home = () => {
             </section>
 
             <section className=" padding">
-                superquality
+                <PopularProducts></PopularProducts>
             </section>
 
             <section className="padding-x py-10">
