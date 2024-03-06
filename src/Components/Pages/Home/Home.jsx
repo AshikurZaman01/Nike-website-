@@ -4,6 +4,7 @@ import Offers from "../Offers/Offers";
 import PopularProducts from "../PopularProdcuts/PopularProducts";
 import Review from "../Review/Review";
 import Services from "../Services/Services";
+import Subscribe from "../Subscribe/Subscribe";
 import SuperQuality from "../SuperQuality/SuperQuality";
 
 const Home = () => {
@@ -35,7 +36,7 @@ const Home = () => {
 
             <section className="padding bg-pale-blue"><Review></Review></section>
 
-            <section className="padding-x sm:py-32 py-16 w-full">subscriber</section>
+            <section className="padding-x sm:py-32 py-16 w-full"><Subscribe></Subscribe></section>
 
             <section className="padding-x padding-t  pb-8  bg-black ">footer</section>
 
