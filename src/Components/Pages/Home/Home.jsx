@@ -2,6 +2,7 @@ import Hero from "../Header/Hero/Hero";
 import Nav from "../Header/Nav";
 import Offers from "../Offers/Offers";
 import PopularProducts from "../PopularProdcuts/PopularProducts";
+import Review from "../Review/Review";
 import Services from "../Services/Services";
 import SuperQuality from "../SuperQuality/SuperQuality";
 
@@ -32,7 +33,7 @@ const Home = () => {
 
             <section className="padding"><Offers></Offers></section>
 
-            <section className="padding bg-pale-blue">Customer Reviews</section>
+            <section className="padding bg-pale-blue"><Review></Review></section>
 
             <section className="padding-x sm:py-32 py-16 w-full">subscriber</section>
 

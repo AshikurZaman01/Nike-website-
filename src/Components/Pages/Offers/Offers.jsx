@@ -11,8 +11,8 @@ const Offers = () => {
                 </div>
 
                 <div className='flex flex-1 flex-col'>
-                    <h2 className='text-4xl font-palanquin font-bold'>
-                        <span className='text-coral-red'>Special </span>
+                    <h2 className='text-4xl font-bold'>
+                        <span className='text-orange-600'>Special </span>
                         Offer
                     </h2>
                     <p className='mt-4 info-text'>
