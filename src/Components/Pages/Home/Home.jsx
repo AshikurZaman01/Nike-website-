@@ -1,5 +1,6 @@
 import Hero from "../Header/Hero/Hero";
 import Nav from "../Header/Nav";
+import Offers from "../Offers/Offers";
 import PopularProducts from "../PopularProdcuts/PopularProducts";
 import Services from "../Services/Services";
 import SuperQuality from "../SuperQuality/SuperQuality";
@@ -29,7 +30,7 @@ const Home = () => {
 
 
 
-            <section className="padding">special offer</section>
+            <section className="padding"><Offers></Offers></section>
 
             <section className="padding bg-pale-blue">Customer Reviews</section>
 
